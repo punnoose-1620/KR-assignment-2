@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AI_Engineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BachelorsDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer_Science_Engineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data_Science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrical_Engineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Knowledge_Representation_and_Semantic_Web"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linear_Algebra_and_Complex_Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MastersDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_Design"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-Teaching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Students"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subjects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sustainable_Building_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teaching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#University"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#attends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teaches"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aswathy_Gopalakrishnan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cecilia_SonStrod"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#He_Tan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Johannes_Oestsch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jonkoping_University"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KTH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malmo_University"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Punnoose_K_Thomas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sneha_Manmathukalam"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AI_Engineering"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AI_Engineering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#MastersDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BachelorsDegree"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer_Science_Engineering"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer_Science_Engineering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#BachelorsDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Science"/>
+        <Class IRI="#Subjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data_Science"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#AI_Engineering"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_Engineering"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrical_Engineering"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#BachelorsDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Representation_and_Semantic_Web"/>
+        <Class IRI="#Subjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Knowledge_Representation_and_Semantic_Web"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#AI_Engineering"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Algebra_and_Complex_Analysis"/>
+        <Class IRI="#Subjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Algebra_and_Complex_Analysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Computer_Science_Engineering"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Algebra_and_Complex_Analysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Electrical_Engineering"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MastersDegree"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_Design"/>
+        <Class IRI="#Subjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_Design"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Sustainable_Building_Management"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-Teaching"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sustainable_Building_Management"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sustainable_Building_Management"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#MastersDegree"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teaching"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Students"/>
+        <NamedIndividual IRI="#Aswathy_Gopalakrishnan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Data_Science"/>
+        <NamedIndividual IRI="#Cecilia_SonStrod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Teaching"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Cecilia_SonStrod"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Knowledge_Representation_and_Semantic_Web"/>
+        <NamedIndividual IRI="#He_Tan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teaching"/>
+        <NamedIndividual IRI="#He_Tan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Knowledge_Representation_and_Semantic_Web"/>
+        <NamedIndividual IRI="#Johannes_Oestsch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Teaching"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Johannes_Oestsch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#University"/>
+        <NamedIndividual IRI="#Jonkoping_University"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#University"/>
+        <NamedIndividual IRI="#KTH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#University"/>
+        <NamedIndividual IRI="#Malmo_University"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Students"/>
+        <NamedIndividual IRI="#Punnoose_K_Thomas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Students"/>
+        <NamedIndividual IRI="#Sneha_Manmathukalam"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#attends"/>
+        <NamedIndividual IRI="#Aswathy_Gopalakrishnan"/>
+        <NamedIndividual IRI="#Jonkoping_University"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Aswathy_Gopalakrishnan"/>
+        <NamedIndividual IRI="#Cecilia_SonStrod"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Cecilia_SonStrod"/>
+        <NamedIndividual IRI="#Aswathy_Gopalakrishnan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#He_Tan"/>
+        <NamedIndividual IRI="#Punnoose_K_Thomas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#He_Tan"/>
+        <NamedIndividual IRI="#Sneha_Manmathukalam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#attends"/>
+        <NamedIndividual IRI="#Punnoose_K_Thomas"/>
+        <NamedIndividual IRI="#Jonkoping_University"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Punnoose_K_Thomas"/>
+        <NamedIndividual IRI="#He_Tan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#attends"/>
+        <NamedIndividual IRI="#Sneha_Manmathukalam"/>
+        <NamedIndividual IRI="#Jonkoping_University"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Sneha_Manmathukalam"/>
+        <NamedIndividual IRI="#He_Tan"/>
+    </ObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Aswathy_Gopalakrishnan"/>
+        <NamedIndividual IRI="#He_Tan"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Aswathy_Gopalakrishnan"/>
+        <NamedIndividual IRI="#Johannes_Oestsch"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Punnoose_K_Thomas"/>
+        <NamedIndividual IRI="#Cecilia_SonStrod"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Punnoose_K_Thomas"/>
+        <NamedIndividual IRI="#Johannes_Oestsch"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Sneha_Manmathukalam"/>
+        <NamedIndividual IRI="#Cecilia_SonStrod"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#studentOf"/>
+        <NamedIndividual IRI="#Sneha_Manmathukalam"/>
+        <NamedIndividual IRI="#Johannes_Oestsch"/>
+    </NegativeObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#studentOf"/>
+        <ObjectProperty IRI="#teaches"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#attends"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#studentOf"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#attends"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#studentOf"/>
+    </SymmetricObjectProperty>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

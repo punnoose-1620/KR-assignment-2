@@ -1,0 +1,177 @@
+Prefix(:=<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5>
+
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Linear_Algebra_and_Complex_Analysis>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Material_Design>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Non-Teaching>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Staff>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching>))
+Declaration(Class(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#teaches>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#KTH>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Malmo_University>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends>)
+
+FunctionalObjectProperty(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends>)
+SymmetricObjectProperty(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends>)
+
+# Object Property: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf>)
+
+InverseObjectProperties(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#teaches>)
+FunctionalObjectProperty(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf>)
+SymmetricObjectProperty(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course>)
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree>))
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University>)
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course>)
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree>))
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects>)
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering>))
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course>)
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree>))
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects>)
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering>))
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Linear_Algebra_and_Complex_Analysis> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Linear_Algebra_and_Complex_Analysis>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Linear_Algebra_and_Complex_Analysis> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects>)
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Linear_Algebra_and_Complex_Analysis> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering>))
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Linear_Algebra_and_Complex_Analysis> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering>))
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University>)
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Material_Design> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Material_Design>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Material_Design> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects>)
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Material_Design> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management>))
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Non-Teaching> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Non-Teaching>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Non-Teaching> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Staff>)
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course>)
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management> ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree>))
+
+# Class: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching>)
+
+SubClassOf(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Staff>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod>)
+NegativeObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan>)
+NegativeObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch>)
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod>)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching>) <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#teaches> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan>)
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan>)
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#teaches> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#teaches> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam>)
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch>)
+ClassAssertion(ObjectSomeValuesFrom(owl:topObjectProperty <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching>) <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch>)
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University>)
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#KTH> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#KTH>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#KTH>)
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Malmo_University> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Malmo_University>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Malmo_University>)
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan>)
+NegativeObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod>)
+NegativeObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch>)
+
+# Individual: <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam> (<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam>)
+
+ClassAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan>)
+NegativeObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod>)
+NegativeObjectPropertyAssertion(<http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam> <http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch>)
+
+
+)

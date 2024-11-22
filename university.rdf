@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#attends">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#teaches"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#teaches"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#BachelorsDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#AI_Engineering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Linear_Algebra_and_Complex_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Linear_Algebra_and_Complex_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Computer_Science_Engineering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Electrical_Engineering"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Material_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Material_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Non-Teaching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Non-Teaching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Subjects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sustainable_Building_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Course"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#MastersDegree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students"/>
+        <untitled-ontology-5:attends rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University"/>
+        <untitled-ontology-5:studentOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Data_Science"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching"/>
+            </owl:Restriction>
+        </rdf:type>
+        <untitled-ontology-5:teaches rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Aswathy_Gopalakrishnan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching"/>
+        <untitled-ontology-5:teaches rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas"/>
+        <untitled-ontology-5:teaches rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Knowledge_Representation_and_Semantic_Web"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Teaching"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#KTH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#KTH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Malmo_University -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Malmo_University">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students"/>
+        <untitled-ontology-5:attends rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University"/>
+        <untitled-ontology-5:studentOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Punnoose_K_Thomas"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Students"/>
+        <untitled-ontology-5:attends rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Jonkoping_University"/>
+        <untitled-ontology-5:studentOf rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#He_Tan"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Cecilia_SonStrod"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Sneha_Manmathukalam"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#studentOf"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/punnoosekthomas/ontologies/2024/10/untitled-ontology-5#Johannes_Oestsch"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
